@@ -10,13 +10,14 @@
     <meta name="keywords" content="Balle Balle Dhaba, Dhaba, Dhaba Bangalore, BBD, myballeballedhaba.com, balleballedhaba.com, dhaba bangalore, myballeballe, balle, balleballe" />
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     <!-- Custom Theme files -->
-    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
-    <link href="css/font-awesome.css" rel="stylesheet">
+
+    <link href="../css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="../css/style.css" type="text/css" rel="stylesheet" media="all">
+    <link href="../css/font-awesome.css" rel="stylesheet">
     <!-- font-awesome icons -->
     <!-- //Custom Theme files -->
     <!-- js -->
-    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="../js/jquery-2.2.3.min.js"></script>
     <!-- //js -->
     <!-- web-fonts -->
     <link href="//fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
@@ -40,31 +41,25 @@
                         </div>
                         <div class="w3ls-header-right">
                             <ul>
-                                <li class="head-dpdn">  
-                                    <i class="fa fa-phone" aria-hidden="true"></i>Call us: +91-8252645378
-                                </li>                               
                                 <li class="head-dpdn">
-                                    <a href="index.aspx">Home</a>
+                                    <i class="fa fa-user" aria-hidden="true"></i>Hi !<asp:Label ID="name" runat="server" Text=""></asp:Label>
                                 </li>
-                                <li class="head-dpdn">
-                                    <a href="Menu.aspx">Menu</a>
-                                </li>
-                                <li class="head-dpdn">
-                                    <a href="Contact.aspx">Contact</a>
-                                </li>
-                                 <li class="head-dpdn">
-                                    <a href="Login.aspx"><i class="fa fa-sign-in" aria-hidden="true"></i>Login</a>
-                                </li>
-                                <li class="head-dpdn">
-                                    <a href="SignUp.aspx"><i class="fa fa-user-plus" aria-hidden="true"></i>Signup</a>
-                                </li>
+                                <li><a href="Dashboard.aspx"><i class="lnr lnr-book"></i><span>Dashboard</span></a></li>
+                                <li><a href="AddBag.aspx"><i class="lnr lnr-book"></i><span>Home Delivery</span></a></li>
+                                <li><a href="Reservation.aspx"><i class="lnr lnr-pencil"></i><span>Reserve your Table</span></a></li>
+                                <li><a href="Feedbacks.aspx"><i class="lnr lnr-spell-check"></i><span>Feedbacks</span></a></li>
+                                <li><a href="Address_Book.aspx"><i class="lnr lnr-pencil"></i><span>Address Book</span></a></li>
+                                <li><a href="History.aspx"><i class="lnr lnr-spell-check"></i><span>History</span></a></li>
+                                <li>
+                                    <asp:LinkButton ID="LinkButton1" OnClick="btnLogout_Click" runat="server">Logout</asp:LinkButton></li>
                             </ul>
+
                         </div>
                         <div class="clearfix"></div>
                     </div>
                 </div>
                 <!-- //header-one -->
-               
+
             </div>
             <!-- //header-end -->
             <!-- banner-text -->
@@ -87,31 +82,15 @@
 
         <div class="copyw3-agile">
             <div class="container">
-                <p>&copy; Copyright 2022 - Balle Balle Dhaba Designed by Priya Prasad</p>
+                <p>&copy; Copyright 2022- Balle Balle Dhaba Designed by Priya Prasad</p>
             </div>
         </div>
         <!-- //footer -->
-        <!-- cart-js -->
-        <script src="js/minicart.js"></script>
-        <script>
-            w3ls.render();
 
-            w3ls.cart.on('w3sb_checkout', function (evt) {
-                var items, len, i;
-
-                if (this.subtotal() > 0) {
-                    items = this.items();
-
-                    for (i = 0, len = items.length; i < len; i++) {
-                    }
-                }
-            });
-        </script>
-        <!-- //cart-js -->
         <!-- start-smooth-scrolling -->
-        <script src="js/SmoothScroll.min.js"></script>
-        <script type="text/javascript" src="js/move-top.js"></script>
-        <script type="text/javascript" src="js/easing.js"></script>
+        <script src="../js/SmoothScroll.min.js"></script>
+        <script type="text/javascript" src="../js/move-top.js"></script>
+        <script type="text/javascript" src="../js/easing.js"></script>
         <script type="text/javascript">
             jQuery(document).ready(function ($) {
                 $(".scroll").click(function (event) {
@@ -142,7 +121,7 @@
         <!-- Bootstrap core JavaScript
     ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
-        <script src="js/bootstrap.js"></script>
+        <script src="../js/bootstrap.js"></script>
 
     </form>
 </body>
